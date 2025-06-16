@@ -1,1 +1,2 @@
-plotly==6.1.2
+# auto detect text files and perform LF normalization
+* text=auto
