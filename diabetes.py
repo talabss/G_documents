@@ -2,7 +2,6 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as pt
 import numpy as np
-import seaborn as sns
 
 
 #read a csv file
@@ -20,11 +19,11 @@ st.title("general information about diabetes analysis")
 hall = df.describe
 st.write(hall)
 
-st.title('blood pressure chart')
-counted = df["blood pressure"].value_counts().reset_index()
-counted,columns = ["bloodpressue", "count"]
-bloodpressure = px,pie(counted, names = "bloodpressure",values =
-st.plotly_chart('bloodpressure', use_container_width = True)
+st.title('BloodPressure chart')
+counted = df["BloodPressure"].value_counts().reset_index()
+counted,columns = ["BloodPressure", "count"]
+BloodPressure = px.pie(counted, names = "BloodPressure",values =
+st.plotly_chart('BloodPressure', use_container_width = True)
 
 #import -m pip install scikit-learn
 #import -m pip install matlib
